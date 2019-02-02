@@ -1,3 +1,8 @@
+_this likely does not abide by Suckless coding policies given
+the thrown-together nature of my shell scripts. please clone and
+use the original dwm repository where possible, this fork is more
+for my own location to work-on / sync code (:_
+
 dwm - dynamic window manager
 ============================
 dwm is an extremely fast, small, and dynamic window manager for X.
