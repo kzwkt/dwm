@@ -1,7 +1,12 @@
-_this likely does not abide by Suckless coding policies given
+!! this likely does not abide by Suckless coding policies given
 the thrown-together nature of my shell scripts. please clone and
 use the original dwm repository where possible, this fork is more
-for my own location to work-on / sync code (:_
+for my own location to work-on / sync code (: !!
+
+!! the dwm-brightness executable likely needs to be custom
+tailored to work on your specific system. based on where the
+brightness 'file' is located under your specific /sys pseudo
+filesystem. you can edit these under the defines !!
 
 dwm - dynamic window manager
 ============================
@@ -10,13 +15,13 @@ dwm is an extremely fast, small, and dynamic window manager for X.
 This is grufwub's fork with a few small changes, mainly as a place
 for her to redownload and regularly sync changes ;p. It comes with
 shortcuts added for volume and brightness modification, by calling
-sh scripts.
+sh scripts / small C execs.
 
 
 Requirements
 ------------
 In order to build grufwub's dwm you need the Xlib header files, 
-PulseAudio and xbacklight.
+PulseAudio.
 
 
 Installation
