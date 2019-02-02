@@ -10,7 +10,8 @@ sh scripts.
 
 Requirements
 ------------
-In order to build grufwub's dwm you need the Xlib header files, PulseAudio and xbacklight.
+In order to build grufwub's dwm you need the Xlib header files, 
+PulseAudio and xbacklight.
 
 
 Installation
