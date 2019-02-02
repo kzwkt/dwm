@@ -2,6 +2,11 @@ dwm - dynamic window manager
 ============================
 dwm is an extremely fast, small, and dynamic window manager for X.
 
+This is grufwub's fork with a few small changes, mainly as a place
+for her to redownload and regularly sync changes ;p. It comes with
+shortcuts added for volume and brightness modification, by calling
+sh scripts.
+
 
 Requirements
 ------------
