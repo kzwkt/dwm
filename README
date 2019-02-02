@@ -5,7 +5,7 @@ dwm is an extremely fast, small, and dynamic window manager for X.
 
 Requirements
 ------------
-In order to build dwm you need the Xlib header files.
+In order to build grufwub's dwm you need the Xlib header files, PulseAudio and xbacklight.
 
 
 Installation
@@ -44,5 +44,7 @@ like this in your .xinitrc:
 
 Configuration
 -------------
-The configuration of dwm is done by creating a custom config.h
-and (re)compiling the source code.
+The configuration of dwm is done by modifying config.h
+and (re)compiling the source code. To set your brightness / volume
+modifier keys, edit the defined values in config.h using values
+obtained from 'xmodmap -pk'.
