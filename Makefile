@@ -40,7 +40,7 @@ install: all
 	mkdir -p ${DESTDIR}${PREFIX}/bin
 	cp -f dwm ${DESTDIR}${PREFIX}/bin
 	chmod 755 ${DESTDIR}${PREFIX}/bin/dwm
-	cp -f dwm-brightness ${DESTDIR}${PREFIX}/bin
+	${CC} dwm-brightness.c -o ${DESTDIR}${PREFIX}/bin/dwm-brightness
 	chmod 755 ${DESTDIR}${PREFIX}/bin/dwm-brightness
 	chmod +s ${DESTDIR}${PREFIX}/bin/dwm-brightness
 	cp -f dwm-volume ${DESTDIR}${PREFIX}/bin
