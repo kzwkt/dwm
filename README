@@ -8,6 +8,9 @@ tailored to work on your specific system. based on where the
 brightness 'file' is located under your specific /sys pseudo
 filesystem. you can edit these under the defines !!
 
+!! dwm-brightness needs root, and setuid bit, which unfortunately
+isn't very secure. I need to look more into alternatives here !!
+
 dwm - dynamic window manager
 ============================
 dwm is an extremely fast, small, and dynamic window manager for X.
