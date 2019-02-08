@@ -23,8 +23,8 @@ sh scripts / small C execs.
 
 Requirements
 ------------
-In order to build grufwub's dwm you need the Xlib header files, 
-PulseAudio.
+In order to build grufwub's dwm you need the Xlib header files. 
+To run, you need PulseAudio, transset-df and Xcompmgr.
 
 
 Installation
