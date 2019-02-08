@@ -22,11 +22,14 @@ gnome-keyring-daemon --start --components=pkcs11 &
 xset r rate 225 35
 
 # Set touchpad settings
-xinput set-prop 15 297 1
-xinput set-prop 15 299 0
+xinput set-prop 'DELL081B:00 044E:120A Touchpad' 'libinput Natural Scrolling Enabled' 1
+xinput set-prop 'DELL081B:00 044E:120A Touchpad' 'libinput Disable While Typing Enabled' 0
 
 # Set background
-feh --bg-fill /home/grufwub/Pictures/Wallpapers/10-7.png
+feh --bg-fill /home/grufwub/Pictures/Wallpapers/3d-abstract-colorful-shapes-minimalist-5k-zr.jpg
+
+# Load xcompmgr
+xcompmgr -c &
 
 # Launch!
 dbus-launch --sh-syntax --exit-with-session /usr/local/bin/dwm
