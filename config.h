@@ -5,6 +5,7 @@
 #define KEY_BRIGHT_DOWN 0x1008ff03
 #define KEY_VOL_UP      0x1008ff13
 #define KEY_VOL_DOWN    0x1008ff11
+#define BCKLGHT_DIFF	"5"
 
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
@@ -77,8 +78,8 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_base00, "-nf", col_base0D, "-sb", col_base00, "-sf", col_base0D, NULL };
 static const char *termcmd[]  = { "st", NULL };
-static const char *brightness_up[]  =   { "dwm-brightness", "inc", NULL };
-static const char *brightness_down[]  = { "dwm-brightness", "dec", NULL };
+static const char *brightness_up[]  =   { "xbacklight", "-inc", BCKLGHT_DIFF };
+static const char *brightness_down[]  = { "xbacklight", "-dec", BCKLGHT_DIFF };
 static const char *volume_up[] = { "dwm-volume", "up", NULL };
 static const char *volume_down[] = { "dwm-volume", "down", NULL };
 
