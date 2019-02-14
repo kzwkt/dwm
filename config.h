@@ -6,6 +6,8 @@
 #define KEY_VOL_UP      0x1008ff13
 #define KEY_VOL_DOWN    0x1008ff11
 #define BCKLGHT_DIFF	"5"
+#define VOLUP_DIFF	"5%+"
+#define VOLDOWN_DIFF	"5%-"
 
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
@@ -80,8 +82,8 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "st", NULL };
 static const char *brightness_up[]  =   { "xbacklight", "-inc", BCKLGHT_DIFF };
 static const char *brightness_down[]  = { "xbacklight", "-dec", BCKLGHT_DIFF };
-static const char *volume_up[] = { "dwm-volume", "up", NULL };
-static const char *volume_down[] = { "dwm-volume", "down", NULL };
+static const char *volume_up[] = { "amixer", "-D", "pulse", "sset", "Master", VOLUP_DIFF, NULL };
+static const char *volume_down[] = { "amixer", "-D", "pulse", "sset", "Master", VOLDOWN_DIFF, NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
