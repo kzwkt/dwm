@@ -1,16 +1,16 @@
 !! this likely does not abide by Suckless coding policies given
-the thrown-together nature of my shell scripts. please clone and
-use the original dwm repository where possible, this fork is more
-for my own location to work-on / sync code (: !!
+the number of extra features it includes by default ,this fork
+is more for my own location to work-on / sync code (: !!
 
-dwm - dynamic window manager
-============================
+dwm - dynamic window manager (grufwub's fork)
+=============================================
 dwm is an extremely fast, small, and dynamic window manager for X.
 
-This is grufwub's fork with a few small changes, mainly as a place
-for her to redownload and regularly sync changes ;p. It comes with
-shortcuts added for volume and brightness modification, by calling
-sh scripts / small C execs.
+It comes with shortcuts added for volume and brightness
+modification, by calling PulseAudio and Xbacklight respectively.
+Also adds controllable Window transparency via transset-df and
+Xcompgr (feature added using suckless' default-transparency
+patch).
 
 
 Requirements
